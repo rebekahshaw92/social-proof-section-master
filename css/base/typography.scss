@@ -1,0 +1,69 @@
+/* typograohy.scss */
+
+@import "../../scss/bootstrap-grid.scss";
+
+$font: 'Spartan', sans-serif;
+$veryDarkMagenta: hsl(300, 43%, 22%);
+$white: hsl(0, 0%, 100%);
+$lightGrayishMagenta: hsl(300, 24%, 96%);
+$darkGrayishMagenta: hsl(303, 10%, 53%);
+$softPink: hsl(333, 80%, 67%);
+
+h1 {
+    font-family: $font;
+    font-size: 30px;
+}
+
+p {
+    font-family: $font;
+    font-weight: 400;
+}
+
+.page-header {
+    font-size: 38px;
+    font-weight: 700;
+    color: $veryDarkMagenta;
+    text-align: center;;
+    @include media-breakpoint-up(lg){
+      text-align: left;
+    }
+}
+
+.page-text {
+    font-size: 22px;
+    font-weight: 400;
+    font-family: $font;
+    color: $darkGrayishMagenta;
+    @include media-breakpoint-up(xl) {
+      font-size: 15px;
+    }
+}
+
+.card-text {
+  color: $veryDarkMagenta;
+  font: $font;
+  flex: 1;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.username {
+    font-family: $font;
+    font-size: 15px;
+    font-weight: 500;
+    color: $white;
+  }
+
+  .user-ver {
+    color: $softPink;
+    font-family: $font;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .opinion-text {
+    font-family: $font;
+    font-weight: 400;
+    font-size: 15px;
+    color: $white;
+   }

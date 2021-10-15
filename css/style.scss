@@ -1,0 +1,183 @@
+@import "../scss/bootstrap-grid.scss";
+
+$font: 'Spartan', sans-serif;
+$veryDarkMagenta: hsl(300, 43%, 22%);
+$white: hsl(0, 0%, 100%);
+$lightGrayishMagenta: hsl(300, 24%, 96%);
+$darkGrayishMagenta: hsl(303, 10%, 53%);
+$softPink: hsl(333, 80%, 67%);
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    padding-top: 20px;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+
+  .header {
+	
+	margin: auto;
+  @include media-breakpoint-up(xl){
+    top: 50px;
+	  width: 90%;
+  }
+}
+
+
+  .container {
+      background-color: $white;
+      height: auto;
+      background-image: url("../images/bg-pattern-top-mobile.svg"), url("../images/bg-pattern-bottom-mobile.svg") no-repeat;
+      @include media-breakpoint-up(xxl) {
+      background-image: url("../images/bg-pattern-top-desktop.svg"), url("../images/bg-pattern-bottom-desktop.svg") no-repeat;
+      background-position: top left, bottom right;
+      }
+  }
+
+  .headerText {
+  width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+  padding-top: 20px;
+  text-align: center;
+  @include media-breakpoint-up(lg){
+    text-align: left;
+    font-size: 15px;
+  }
+  }
+
+  .page-header {
+      color: $veryDarkMagenta;
+      font-size: 38px;
+      font-weight: 700;
+      text-align: center;
+      font-family: $font;
+      margin-left: 60px;
+      margin-right: 60px;
+      @include media-breakpoint-up(lg){
+        text-align: left;
+      }
+      @include media-breakpoint-up(xl) {
+        margin-top: 60px;
+        margin-left: 0;
+      }
+  }
+
+  .page-text {
+      font-size: 22px;
+      font-weight: 400;
+      //width: 100%;
+     // margin-left: 60px;
+      font-family: $font;
+      color: $darkGrayishMagenta;
+      @include media-breakpoint-up(xl) {
+        font-size: 15px;
+      }
+  }
+
+  .card {
+     background-color: $lightGrayishMagenta !important;
+     border: none !important;
+     margin-top: 1em;
+     border-radius: 8px;
+     width: 27rem;
+     padding-left: 40px;
+     //align-items: center;
+     justify-content: space-around;
+     height: 80px;
+     border-radius: 7px;
+     @include media-breakpoint-up(md) {
+       width: 32rem;
+     }
+    @include media-breakpoint-up(xl) {
+      height: 45px;
+      width: 26rem;
+      padding: 5px;
+    }
+  }
+
+  .review2 {
+    @include media-breakpoint-up(xl){
+    margin-left: 3rem;
+    }
+  }
+
+  .review3 {
+    padding-bottom: 40px;
+    @include media-breakpoint-up(xl){
+    margin-left: 6rem;
+    }
+  }
+
+  .card-text {
+      color: $veryDarkMagenta;
+      font: $font;
+      flex: 1;
+      font-size: 15px;
+      font-weight: 700;
+  }
+
+ .mainRating {
+   @include media-breakpoint-up(xl){
+   padding-top: 42px;
+   }
+ }
+
+ .options {
+  margin-left: 40px;
+ }
+ .purchaser-options {
+   background-color: $veryDarkMagenta;
+   height: 280px;
+   margin-bottom: 20px;
+   width: 540px !important;
+   //margin-left: 20px;
+   @include media-breakpoint-up(md) {
+    width: 640px !important;
+  }
+  @include media-breakpoint-up(lg) {
+    width: 300px !important;
+    height: 300px;
+  }
+
+   @include media-breakpoint-up(xl) {
+   width: 370px !important;
+   margin-left: 0;
+   }
+ }
+
+ .username {
+   font-family: $font;
+   font-size: 15px;
+   font-weight: 500;
+   color: $white;
+ }
+
+ .user-ver {
+   color: $softPink;
+   font-family: $font;
+   font-size: 15px;
+   font-weight: 500;
+ }
+
+ .opinion-text {
+  font-family: $font;
+  font-weight: 400;
+  font-size: 15px;
+  color: $white;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 15px;
+ }
+
+ .user-img {
+   padding: 20px;
+   transition: scale(0.6);
+ }
+
+//  .opinion {
+//    margin-left: 10px;
+//  }

@@ -1,0 +1,38 @@
+/* body.scss */
+
+@import "../../scss/bootstrap-grid.scss";
+
+$veryDarkMagenta: hsl(300, 43%, 22%);
+
+.options {
+    margin-left: 40px;
+   }
+
+   .purchaser-options {
+    background-color: $veryDarkMagenta;
+    height: 280px;
+    margin-bottom: 20px;
+    width: 500px !important;
+    //margin-left: 20px;
+    @include media-breakpoint-up(md) {
+     width: 640px !important;
+   }
+   @include media-breakpoint-up(lg) {
+     width: 260px !important;
+     height: 300px;
+   }
+    @include media-breakpoint-up(xl) {
+    width: 370px !important;
+    margin-left: 0;
+    }
+  }
+
+  .opinion-text {
+    padding-left: 20px;
+    padding-right: 20px;
+   }
+
+   .user-img {
+    padding: 20px;
+    transition: scale(0.6);
+  }

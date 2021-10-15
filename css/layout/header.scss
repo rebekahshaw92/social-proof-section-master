@@ -1,0 +1,73 @@
+/* header.scss */
+
+@import "../../scss/bootstrap-grid.scss";
+
+$lightGrayishMagenta: hsl(300, 24%, 96%);
+
+.header {
+	margin: auto;
+  @include media-breakpoint-up(xl){
+    top: 50px;
+	  width: 90%;
+  }
+}
+
+.headerText {
+    width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 20px;
+    }
+
+    .page-header {
+        margin-left: 60px;
+        margin-right: 60px;
+        @include media-breakpoint-up(xl) {
+          margin-top: 60px;
+          margin-left: 0;
+        }
+    }
+
+    .card {
+        background-color: $lightGrayishMagenta !important;
+        border: none !important;
+        margin-top: 1em;
+        border-radius: 8px;
+        width: 30rem;
+        padding-left: 40px;
+        justify-content: space-around;
+        height: 80px;
+        border-radius: 7px;
+        @include media-breakpoint-up(md) {
+          width: 32rem;
+        }
+       @include media-breakpoint-up(xl) {
+         height: 45px;
+         width: 40rem;
+         padding: 5px;
+       }
+     }
+   
+     .review2 {
+        @include media-breakpoint-up(xl){
+        margin-left: 3rem;
+        }
+      }
+    
+      .review3 {
+        padding-bottom: 40px;
+        @include media-breakpoint-up(xl){
+        margin-left: 6rem;
+        }
+      }
+
+      .card-text {
+        flex: 1; 
+    }
+
+    .mainRating {
+        @include media-breakpoint-up(xl){
+        padding-top: 42px;
+        }
+      }
